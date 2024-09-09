@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Gentel-Safe: A Unified Benchmark and Shielding Framework for
+        Defending Against Prompt Injection Attacks">
+  <meta name="keywords" content="Jailbreaking, LLMs, adversarial, prompting, red teaming">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gentel-Safe: A Unified Benchmark and Shielding Framework for
+    Defending Against Prompt Injection Attacks</title>
+
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Gentel-Safe: A Unified Benchmark and Shielding Framework for
+            Defending Against Prompt Injection Attacks</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Rongchang Li</span>,
+            <span class="author-block">Minjie Chen</span>,
+            <span class="author-block">Chang Hu</span>,
+            <span class="author-block">Han Chen</span>,
+            <span class="author-block">Chang Hu</span>,
+            <span class="author-block">Han Chen</span>,
+            <span class="author-block">Wenpeng Xing</span>,
+            <span class="author-block">Meng Han</span>
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">GenTel.io</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Zhejiang University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2310.08419"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              
+              <!-- model Link. -->
+              <span class="link-block">
+                <a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/GenTelLab/gentelshield-v1"
+                   class="external-link button is-normal is-rounded is-dark">
+                   <span class="icon">
+                    <img src="./static/images/huggingface_logo-noborder.svg" alt="Hugging Face" style="width:24px; height:24px;">
+                   </span>
+                  <span>Model</span>
+                  </a>
+              </span>
+
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/datasets/GenTelLab/gentelbench-v1"
+                   class="external-link button is-normal is-rounded is-dark">
+                   <span class="icon">
+                    <img src="./static/images/huggingface_logo-noborder.svg" alt="Hugging Face" style="width:24px; height:24px;">
+                   </span>
+                  <span>Datasets</span>
+                  </a>
+              </span>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Explanation video. -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="content has-text-justified is-centered">
+      <p>
+        Large language models (LLMs) have achieved significant success across various applications. However, despite the implementation of numerous safety guardrails, concerns persist regarding their potential for misuse. Recent investigations and analyses show that LLMs suffer serious risks of prompt injection attacks, wherein an attacker fools LLMs into outputting objectionable content by overriding the safety guardrails. Prompt injection attacks can generally be categorized into jailbreak attacks, target hijacking attacks, and prompt leakage attacks, each leading to issues such as generating illegal outputs, unauthorized privilege escalation, and privacy breaches. 
+        
+        We introduce <b>GenTel-Safe</b>, a unified framework that includes a novel prompt injection attack detection method, <b>GenTel-Shield</b>, along with a comprehensive evaluation benchmark, <b>GenTel-Bench</b>, which compromises 84812 prompt injection attacks, spanning 3 major categories and 28 security scenarios.
+      </p>
+    </div>
+      <br>
+      <h2 class="title is-3">GenTel-Bench</h2>
+      <div class="content has-text-centered">
+        <img src="./static/images/gentel-bench.svg" style="width:1000px;"
+        class="example-image"
+        alt="GenTel-Bench"/>
+      </div>
+      <br><br>
+
+      <h2 class="title is-3">GenTel-Shield</h2>
+      <div class="content has-text-centered">
+        <img src="./static/images/gentel-shield.jpg" style="width:1000px;"
+        class="example-image"
+        alt="gentel-shield"/>
+      </div>
+  </div>
+</div>
+<!--/ Paper video. -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large Language Models (LLMs) like GPT-4, LLaMA, and Qwen have demonstrated remarkable success across a wide range of applications. However, these models remain inherently vulnerable to prompt injection attacks, which can bypass existing safety mechanisms, highlighting the urgent need for more robust attack detection methods and comprehensive evaluation benchmarks. To address these challenges, we introduce <b>GenTel-Safe</b>, a unified framework that includes a novel prompt injection attack detection method, <b>GenTel-Shield</b>, along with a comprehensive evaluation benchmark, <b>GenTel-Bench</b>, which compromises 84812 prompt injection attacks, spanning 3 major categories and 28 security scenarios. To prove the effectiveness of GenTel-Shield, we evaluate it together with vanilla safety guardrails against the GenTel-Bench dataset. Empirically, GenTel-Shield can achieve state-of-the-art attack detection success rates, which reveals the critical weakness of existing safeguarding techniques against harmful prompts.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <h2 class="title is-3">Results</h2>
+
+        <div class="content has-text-justified is-centered">
+          <p>
+            Classification performance on <b>Jailbreak Attack Scenarios</b>. The results indicate that the Ours model outperforms all other models across key metrics, particularly in Accuracy, F1 score, and Recall, achieving 97.63%, 97.69%, and 97.34%, respectively.
+          </p>
+        </div>        
+          <div class="content has-text-centered">
+            <img src="./static/images/table1.png" style="width:600px;"
+            class="result-image"
+            alt="table1"/>
+          </div>
+          <br>
+          <div class="content has-text-justified is-centered">
+            <p>
+              Classification performance on <b>Goal Hijacking Attack Scenarios</b>. GenTel-Shield, achieves the highest overall performance, with a best-in-class Accuracy of 96.81% and F1 score of 96.74. Its high Precision (99.44%) and Recall (94.19%) suggest a strong balance between correctly detecting attack samples and minimizing false positives, making it more reliable for real-world application.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/table2.png" style="width:600px;"
+            class="result-image"
+            alt="table2"/>
+          </div>
+          <br>
+          <div class="content has-text-justified is-centered">
+            <p>
+              Classification Performance on <b>Prompt Leaking Attack Scenarios</b>. Our model ranks among the best for detecting injection attacks, particularly in handling complex attack scenarios, showcasing exceptional classification capabilities.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/table3.png" style="width:600px;"
+            class="result-image"
+            alt="table3"/>
+          </div>
+          <br>
+          <div class="content has-text-justified is-centered">
+            <p>
+              In order to explore the performance of different models in various <b>subdivision scenarios</b>, we conducted a series of experiments. GenTel-Shield consistently outperformed other models in most categories, achieving high accuracy across several risk scenarios.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <object data="./static/images/heatmap.svg" type="application/pdf" style="width:800px;" class="result-image"></object>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Contact</h2>
+    Please feel free to email us at <code>mhan@zju.edu.cn</code>. And if you find this work useful in your own research, please consider citing our work.
+    <!-- <pre><code>@misc{
+}</code></pre> -->
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          
+          <p>
+            Website template borrowed from <a target="_blank" rel="noopener noreferrer" 
+              href="https://github.com/nerfies/nerfies.github.io">here</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
